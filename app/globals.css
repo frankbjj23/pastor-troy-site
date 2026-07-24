@@ -66,11 +66,8 @@ h1 { max-width: 720px; margin: 0; font-size: clamp(64px, 7vw, 112px); font-weigh
 .scripture-band span { font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
 
 .section { max-width: 1280px; margin: 0 auto; padding: 130px clamp(24px, 6vw, 90px); }
-.welcome { display: grid; grid-template-columns: minmax(260px, 430px) 1fr; gap: clamp(50px, 8vw, 120px); align-items: center; }
-.portrait-frame { position: relative; padding: 0 28px 28px 0; }
-.portrait-frame::after { content: ""; position: absolute; inset: 28px 0 0 28px; z-index: -1; border: 1px solid var(--steel); }
-.portrait-frame img { width: 100%; aspect-ratio: .78; object-fit: cover; object-position: center 25%; filter: saturate(.84) contrast(1.02); }
-.portrait-caption { position: absolute; right: -20px; bottom: 58px; padding: 12px 17px; background: var(--navy); color: white; transform: rotate(-90deg); text-transform: uppercase; letter-spacing: .18em; font-size: 9px; }
+.welcome { max-width: 980px; }
+.welcome .section-copy { position: relative; padding-left: clamp(0px, 5vw, 72px); border-left: 1px solid var(--silver); }
 .section-copy h2, .gather-intro h2, .gallery-heading h2, .connect h2 { margin: 0; color: var(--navy); font-size: clamp(48px, 5vw, 74px); font-weight: 600; line-height: .95; letter-spacing: -.025em; }
 .section-copy .lead { margin-top: 30px; font-size: 19px; line-height: 1.65; color: #394653; }
 .section-copy > p:not(.eyebrow):not(.lead) { color: var(--muted); font-size: 15px; line-height: 1.8; }
@@ -128,8 +125,7 @@ footer > p { color: rgba(255,255,255,.52); font-size: 12px; }
   .hero-portrait { height: 500px; margin: 0; border-top: 1px solid rgba(255,255,255,.24); border-left: 0; }
   .hero-portrait img { object-position: center 35%; }
   .scripture-band { grid-template-columns: 1fr; gap: 12px; }
-  .welcome, .gather, .gallery-heading, .connect { grid-template-columns: 1fr; }
-  .portrait-frame { max-width: 480px; }
+  .gather, .gallery-heading, .connect { grid-template-columns: 1fr; }
   .message-grid { grid-template-columns: 1fr; }
   .message-card { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.18); }
   .message-card:last-child { border-bottom: 0; }
@@ -147,6 +143,7 @@ footer > p { color: rgba(255,255,255,.52); font-size: 12px; }
   .hero-portrait { height: 430px; }
   h1 { font-size: 58px; }
   .church-slogan { font-size: 18px; }
+  .welcome .section-copy { padding-left: 24px; }
   .section, .message-section, .gallery-section, .connect { padding-top: 90px; padding-bottom: 90px; }
   .gather-list article { grid-template-columns: 1fr; gap: 9px; }
   .gallery-grid { grid-template-rows: 360px 250px 250px; }
