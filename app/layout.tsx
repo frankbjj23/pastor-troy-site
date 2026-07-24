@@ -15,26 +15,26 @@ const sans = DM_Sans({
   weight: ["400", "500", "600", "700"],
 });
 
-const title = "Pastor Troy | Faith, Hope & Fellowship";
-const description = "The ministry home of Pastor Troy—a Baptist Christian minister sharing Gospel-centered encouragement, worship, prayer, and fellowship.";
+const title = "Greater Expectation | Pastor Troy";
+const description = "Greater Expectation is the church and ministry home of Pastor Troy—sharing Gospel-centered encouragement, worship, prayer, and fellowship.";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
   const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "localhost:3000";
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
   const base = new URL(`${protocol}://${host}`);
-  const socialImage = new URL("/og.png", base).toString();
+  const socialImage = new URL("/og-greater-expectation.png", base).toString();
 
   return {
     metadataBase: base,
     title,
     description,
-    icons: { icon: "/images/pastor-troy-portrait.jpg", shortcut: "/images/pastor-troy-portrait.jpg" },
+    icons: { icon: "/images/pastor-troy-main.jpg", shortcut: "/images/pastor-troy-main.jpg" },
     openGraph: {
       title,
       description,
       type: "website",
-      images: [{ url: socialImage, width: 1672, height: 941, alt: "Pastor Troy — Faith, Hope, Fellowship" }],
+      images: [{ url: socialImage, width: 1672, height: 941, alt: "Greater Expectation with Pastor Troy" }],
     },
     twitter: { card: "summary_large_image", title, description, images: [socialImage] },
   };
