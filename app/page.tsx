@@ -20,11 +20,11 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#home" aria-label="Pastor Troy home">
-          <span className="brand-mark" aria-hidden="true">PT</span>
+        <a className="brand" href="#home" aria-label="Greater Expectation home">
+          <span className="brand-mark" aria-hidden="true">GE</span>
           <span>
-            <strong>Pastor Troy</strong>
-            <small>Faith • Hope • Fellowship</small>
+            <strong>Greater Expectation</strong>
+            <small>Pastor Troy Ministry</small>
           </span>
         </a>
         <nav aria-label="Main navigation">
@@ -37,30 +37,27 @@ export default function Home() {
       </header>
 
       <section className="hero" id="home" aria-labelledby="hero-title">
-        <img
-          className="hero-image"
-          src="/images/pastor-troy-preaching.png"
-          alt="Illustrative scene of Pastor Troy preaching in a Baptist church"
-        />
-        <div className="hero-shade" />
         <div className="hero-content">
-          <p className="eyebrow">Welcome to the ministry of Pastor Troy</p>
-          <h1 id="hero-title">A place to grow in faith—and walk it out together.</h1>
-          <p className="hero-copy">
-            Rooted in the Gospel of Jesus Christ, this community is here to worship,
-            learn, pray, and serve with open hearts.
+          <p className="eyebrow">Pastor Troy • Baptist Christian Minister</p>
+          <h1 id="hero-title">Greater<br />Expectation</h1>
+          <p className="church-slogan">
+            “Your past explains where you&apos;ve been. Christ reveals where your going.
+            Live with a Greater Expectation”!
           </p>
           <div className="hero-actions">
-            <a className="button button-gold" href="#message">Hear the message</a>
+            <a className="button button-accent" href="#message">Hear the message</a>
             <a className="button button-ghost" href="#gather">Join the fellowship</a>
           </div>
         </div>
-        <p className="hero-note">AI-created illustrative ministry scene</p>
+        <div className="hero-portrait">
+          <img src="/images/pastor-troy-main.jpg" alt="Pastor Troy of Greater Expectation" />
+          <div className="hero-portrait-label"><span>Pastor</span><strong>Troy</strong></div>
+        </div>
       </section>
 
       <section className="scripture-band" aria-label="Scripture">
-        <p>“Come unto me, all ye that labour and are heavy laden, and I will give you rest.”</p>
-        <span>Matthew 11:28 · KJV</span>
+        <p>Live with a Greater Expectation.</p>
+        <span>Faith for what comes next</span>
       </section>
 
       <section className="section welcome" id="about">
@@ -69,11 +66,11 @@ export default function Home() {
           <span className="portrait-caption">Pastor Troy</span>
         </div>
         <div className="section-copy">
-          <p className="eyebrow dark">A welcome from Pastor Troy</p>
+          <p className="eyebrow dark">Welcome to Greater Expectation</p>
           <h2>There is room for you here.</h2>
           <p className="lead">
-            Pastor Troy is a Baptist Christian minister committed to sharing the good
-            news of Jesus Christ and encouraging people in their daily walk of faith.
+            Greater Expectation is a Christ-centered church community led by Pastor Troy,
+            a Baptist Christian minister committed to sharing the good news of Jesus Christ.
           </p>
           <p>
             Whether you are taking your first step toward God, returning after time
@@ -81,8 +78,8 @@ export default function Home() {
             invited to come with your questions, your hopes, and your whole story.
           </p>
           <blockquote>
-            “We gather not because we have everything figured out, but because God is
-            faithful—and none of us is meant to walk alone.”
+            “Your past explains where you&apos;ve been. Christ reveals where your going.
+            Live with a Greater Expectation”!
           </blockquote>
         </div>
       </section>
@@ -126,7 +123,7 @@ export default function Home() {
           <h2>Life in fellowship</h2>
           <p>
             The life of faith grows through Scripture, prayer, worship, and service.
-            Here are the ways this ministry is preparing to gather people together.
+            Here are the ways Greater Expectation is preparing to gather people together.
           </p>
         </div>
         <div className="gather-list">
@@ -179,17 +176,17 @@ export default function Home() {
             Official service times, location, prayer-request details, and ministry
             contact information will be added here when confirmed.
           </p>
-          <a className="button button-gold" href="#home">Return to the welcome</a>
+            <a className="button button-accent" href="#home">Return to the welcome</a>
         </div>
       </section>
 
       <footer>
         <a className="brand footer-brand" href="#home">
-          <span className="brand-mark" aria-hidden="true">PT</span>
-          <span><strong>Pastor Troy</strong><small>Faith • Hope • Fellowship</small></span>
+          <span className="brand-mark" aria-hidden="true">GE</span>
+          <span><strong>Greater Expectation</strong><small>Pastor Troy Ministry</small></span>
         </a>
-        <p>Centered on Christ. Grounded in Scripture. Growing in community.</p>
-        <p className="copyright">© {new Date().getFullYear()} Pastor Troy Ministry</p>
+        <p>Christ reveals where your going. Live with a Greater Expectation!</p>
+        <p className="copyright">© {new Date().getFullYear()} Greater Expectation</p>
       </footer>
     </main>
   );
