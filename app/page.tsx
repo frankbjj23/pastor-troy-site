@@ -61,10 +61,6 @@ export default function Home() {
       </section>
 
       <section className="section welcome" id="about">
-        <div className="portrait-frame">
-          <img src="/images/pastor-troy-portrait.jpg" alt="Portrait of Pastor Troy" />
-          <span className="portrait-caption">Pastor Troy</span>
-        </div>
         <div className="section-copy">
           <p className="eyebrow dark">Welcome to Greater Expectation</p>
           <h2>There is room for you here.</h2>
