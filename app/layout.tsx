@@ -23,18 +23,18 @@ export async function generateMetadata(): Promise<Metadata> {
   const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "localhost:3000";
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
   const base = new URL(`${protocol}://${host}`);
-  const socialImage = new URL("/og-greater-expectation.png", base).toString();
+  const socialImage = new URL("/og-greater-expectation-v2.png", base).toString();
 
   return {
     metadataBase: base,
     title,
     description,
-    icons: { icon: "/images/pastor-troy-main.jpg", shortcut: "/images/pastor-troy-main.jpg" },
+    icons: { icon: "/images/greater-expectation-logo.jpg", shortcut: "/images/greater-expectation-logo.jpg" },
     openGraph: {
       title,
       description,
       type: "website",
-      images: [{ url: socialImage, width: 1672, height: 941, alt: "Greater Expectation with Pastor Troy" }],
+      images: [{ url: socialImage, width: 1672, height: 941, alt: "Greater Expectation Church with Pastor Troy" }],
     },
     twitter: { card: "summary_large_image", title, description, images: [socialImage] },
   };
