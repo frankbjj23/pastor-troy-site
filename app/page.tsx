@@ -68,8 +68,11 @@ export default function Home() {
       </header>
 
       <section className="hero" id="home" aria-labelledby="hero-title">
+        <div className="hero-light hero-light-one" aria-hidden="true" />
+        <div className="hero-light hero-light-two" aria-hidden="true" />
+        <div className="hero-horizon" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="eyebrow light">Welcome home</p>
+          <p className="eyebrow light hero-kicker"><span /> Welcome home</p>
           <div className="hero-logo">
             <img
               src="/images/greater-expectation-logo.jpg"
@@ -87,13 +90,22 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-pastor">
-          <img src="/images/pastor-troy-main.jpg" alt="Pastor Troy of Greater Expectation Church" />
+          <img src="/images/pastor-troy-main-refined.png" alt="Pastor Troy of Greater Expectation Church" />
           <div className="pastor-caption">
             <span>Lead Pastor</span>
             <strong>Pastor Troy</strong>
           </div>
         </div>
         <div className="hero-scroll" aria-hidden="true">Scroll to discover <span>↓</span></div>
+      </section>
+
+      <section className="faith-ticker" aria-label="Greater Expectation values">
+        <div className="ticker-track">
+          <span>Faith</span><i>✦</i><span>Purpose</span><i>✦</i><span>Expectation</span><i>✦</i>
+          <span>Hope</span><i>✦</i><span>Community</span><i>✦</i><span>Faith</span><i>✦</i>
+          <span>Purpose</span><i>✦</i><span>Expectation</span><i>✦</i><span>Hope</span><i>✦</i>
+          <span>Community</span><i>✦</i>
+        </div>
       </section>
 
       <section className="pathways" aria-label="Ways to connect">
@@ -173,7 +185,8 @@ export default function Home() {
 
       <section className="pastor-section" id="pastor">
         <div className="pastor-photo">
-          <img src="/images/pastor-troy-main.jpg" alt="Pastor Troy" />
+          <img src="/images/pastor-troy-main-refined.png" alt="Pastor Troy" />
+          <span className="pastor-photo-note">Portrait refined to reflect the Greater Expectation visual identity</span>
         </div>
         <div className="pastor-copy">
           <p className="eyebrow navy">Meet our pastor</p>
@@ -237,6 +250,7 @@ export default function Home() {
 
       <section className="connect-section" id="connect">
         <img src="/images/greater-expectation-logo.jpg" alt="" aria-hidden="true" />
+        <div className="connect-glow" aria-hidden="true" />
         <div>
           <p className="eyebrow light">Your next step</p>
           <h2>Come expecting God to meet you here.</h2>
