@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
+
+const canonicalUrl = "https://greaterexpectation.org/";
+const socialImageUrl = "https://greaterexpectation.org/og-greater-expectation-v2.png";
 
 const display = Cormorant_Garamond({
   variable: "--font-display",
@@ -18,32 +20,76 @@ const sans = DM_Sans({
 const title = "Greater Expectation | Pastor Troy";
 const description = "Greater Expectation is the church and ministry home of Pastor Troy—sharing Gospel-centered encouragement, worship, prayer, and fellowship.";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const requestHeaders = await headers();
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "localhost:3000";
-  const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
-  const base = new URL(`${protocol}://${host}`);
-  const socialImage = new URL("/og-greater-expectation-v2.png", base).toString();
+export function generateMetadata(): Metadata {
+  const base = new URL(canonicalUrl);
 
   return {
     metadataBase: base,
     title,
     description,
+    alternates: { canonical: canonicalUrl },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
     icons: { icon: "/images/greater-expectation-logo.jpg", shortcut: "/images/greater-expectation-logo.jpg" },
     openGraph: {
       title,
       description,
       type: "website",
-      images: [{ url: socialImage, width: 1672, height: 941, alt: "Greater Expectation Church with Pastor Troy" }],
+      url: canonicalUrl,
+      siteName: "Greater Expectation Church",
+      images: [{ url: socialImageUrl, width: 1672, height: 941, alt: "Greater Expectation Church with Pastor Troy" }],
     },
-    twitter: { card: "summary_large_image", title, description, images: [socialImage] },
+    twitter: { card: "summary_large_image", title, description, images: [socialImageUrl] },
   };
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Church",
+        "@id": `${canonicalUrl}#church`,
+        name: "Greater Expectation Church",
+        url: canonicalUrl,
+        description,
+        image: socialImageUrl,
+        slogan: "Faith • Purpose • Expectation",
+        leader: {
+          "@type": "Person",
+          name: "Pastor Troy",
+        },
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${canonicalUrl}#website`,
+        url: canonicalUrl,
+        name: "Greater Expectation Church",
+        description,
+        publisher: { "@id": `${canonicalUrl}#church` },
+        inLanguage: "en-US",
+      },
+    ],
+  };
+
   return (
     <html lang="en">
-      <body className={`${display.variable} ${sans.variable}`}>{children}</body>
+      <body className={`${display.variable} ${sans.variable}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
