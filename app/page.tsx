@@ -275,6 +275,13 @@ export default function Home() {
         <div className="footer-meta">
           <strong>Faith • Purpose • Expectation</strong>
           <span>© {new Date().getFullYear()} Greater Expectation Church</span>
+          <a
+            className="design-credit"
+            href="https://franksmithlll.com/"
+            rel="author"
+          >
+            Website design by Frank Smith New Jersey
+          </a>
         </div>
       </footer>
     </main>
