@@ -953,6 +953,22 @@ footer {
   color: rgba(255,255,255,.46);
   font-size: 9px;
 }
+.design-credit {
+  display: inline-block;
+  margin-top: 10px;
+  color: rgba(255,255,255,.56);
+  font-size: 9px;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-decoration-color: rgba(200,211,223,.35);
+  text-underline-offset: 3px;
+  transition: color .2s, text-decoration-color .2s;
+}
+.design-credit:hover,
+.design-credit:focus-visible {
+  color: var(--silver);
+  text-decoration-color: var(--silver);
+}
 
 @media (max-width: 1050px) {
   nav { display: none; }
