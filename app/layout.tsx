@@ -39,6 +39,9 @@ export function generateMetadata(): Metadata {
         "max-video-preview": -1,
       },
     },
+    verification: {
+      google: "1WaqZNjWxqrn9S2ikJC2yVncaU9ApmhQBOUidq06j2I",
+    },
     icons: { icon: "/images/greater-expectation-logo.jpg", shortcut: "/images/greater-expectation-logo.jpg" },
     openGraph: {
       title,
