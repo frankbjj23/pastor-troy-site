@@ -129,7 +129,7 @@ nav a:focus-visible::after { right: 0; }
   height: 100svh;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1.08fr .92fr;
+  grid-template-columns: 1.34fr .66fr;
   color: white;
   background:
     linear-gradient(90deg, rgba(4,24,46,.98) 0%, rgba(6,39,73,.91) 46%, rgba(7,35,65,.5) 71%, rgba(5,24,46,.25) 100%),
@@ -280,12 +280,15 @@ nav a:focus-visible::after { right: 0; }
 .hero-pastor {
   position: relative;
   z-index: 2;
-  height: calc(100% - 104px);
-  margin-top: 104px;
+  align-self: center;
+  justify-self: center;
+  width: min(78%, 430px);
+  height: min(62vh, 570px);
+  margin-top: 82px;
   overflow: hidden;
-  border-left: 1px solid rgba(255,255,255,.2);
+  border: 1px solid rgba(255,255,255,.34);
   background: var(--silver);
-  box-shadow: -35px 0 90px rgba(3,21,40,.35);
+  box-shadow: 0 28px 85px rgba(3,21,40,.42);
   animation: pastorReveal 1.15s cubic-bezier(.2,.75,.25,1) both;
 }
 .hero-pastor::after {
@@ -301,7 +304,7 @@ nav a:focus-visible::after { right: 0; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 34%;
+  object-position: 50% 30%;
   filter: saturate(.94) contrast(1.035);
   transform: scale(1.015);
   transition: transform 1.2s cubic-bezier(.2,.7,.2,1);
@@ -310,8 +313,8 @@ nav a:focus-visible::after { right: 0; }
 .pastor-caption {
   position: absolute;
   z-index: 3;
-  left: clamp(24px, 3vw, 48px);
-  bottom: 44px;
+  left: clamp(20px, 2.5vw, 34px);
+  bottom: 28px;
   padding-left: 18px;
   border-left: 2px solid white;
 }
@@ -327,7 +330,7 @@ nav a:focus-visible::after { right: 0; }
 }
 .pastor-caption strong {
   font-family: var(--font-display), Georgia, serif;
-  font-size: 37px;
+  font-size: 30px;
   font-weight: 600;
 }
 .hero-scroll {
@@ -972,7 +975,7 @@ footer {
 
 @media (max-width: 1050px) {
   nav { display: none; }
-  .hero { grid-template-columns: 1fr .8fr; }
+  .hero { grid-template-columns: 1.18fr .82fr; }
   .hero-copy { margin-left: 6vw; }
   .pathways { grid-template-columns: repeat(2, 1fr); }
   .pathway-card:nth-child(2) { border-right: 0; }
@@ -988,9 +991,9 @@ footer {
   .header-cta { min-height: 40px; padding: 0 14px; }
   .hero {
     height: auto;
-    min-height: 1080px;
+    min-height: 940px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 500px;
+    grid-template-rows: auto 390px;
     background-position: center;
   }
   .hero-copy {
@@ -999,10 +1002,9 @@ footer {
   }
   .hero-logo { width: min(360px, 100%); }
   .hero-pastor {
-    height: 500px;
-    margin: 0;
-    border-left: 0;
-    border-top: 1px solid rgba(255,255,255,.2);
+    width: min(76%, 330px);
+    height: 340px;
+    margin: 0 auto 50px;
   }
   .hero-light { width: 130vw; }
   .hero-scroll { display: none; }
@@ -1030,6 +1032,7 @@ footer {
 
 @media (max-width: 520px) {
   .brand span { display: none; }
+  .hero-pastor { width: 72%; height: 310px; }
   .pathways { grid-template-columns: 1fr; }
   .pathway-card,
   .pathway-card:nth-child(2) {
