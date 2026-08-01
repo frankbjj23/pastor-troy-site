@@ -79,10 +79,10 @@ export default function Home() {
               alt="Greater Expectation Church — Faith, Purpose, Expectation"
             />
           </div>
-          <h1 id="hero-title">A place to believe, belong, and become.</h1>
+          <h1 id="hero-title">Christ at the center. A people growing in faith.</h1>
           <p className="hero-intro">
-            Come as you are. Grow through the Word. Walk forward in faith with
-            Pastor Troy and the Greater Expectation church family.
+            Come as you are. Encounter Christ through the Word. Grow in faith
+            and walk forward with the Greater Expectation church family.
           </p>
           <div className="hero-actions">
             <a className="button button-light" href="#visit">Plan Your Visit</a>
