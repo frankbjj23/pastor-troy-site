@@ -79,10 +79,11 @@ export default function Home() {
               alt="Greater Expectation Church — Faith, Purpose, Expectation"
             />
           </div>
-          <h1 id="hero-title">Christ at the center. A people growing in faith.</h1>
+          <h1 id="hero-title">Greater Expectation Church: Christ at the center, people growing in faith.</h1>
           <p className="hero-intro">
-            Come as you are. Encounter Christ through the Word. Grow in faith
-            and walk forward with the Greater Expectation church family.
+            Greater Expectation Church is a Christ-centered Baptist Christian
+            ministry led by Pastor Troy. Come as you are, encounter Christ
+            through the Word, and grow with a welcoming church family.
           </p>
           <div className="hero-actions">
             <a className="button button-light" href="#visit">Plan Your Visit</a>
@@ -127,7 +128,7 @@ export default function Home() {
           <p className="eyebrow navy">Your first Sunday</p>
           <h2>You can walk in with confidence.</h2>
           <p className="large-copy">
-            Greater Expectation is a Christ-centered Baptist church community
+            Greater Expectation Church is a Christ-centered Baptist church community
             where Scripture, prayer, worship, and fellowship make room for real
             people and real growth.
           </p>
