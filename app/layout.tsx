@@ -17,8 +17,8 @@ const sans = DM_Sans({
   weight: ["400", "500", "600", "700"],
 });
 
-const title = "Greater Expectation | Pastor Troy";
-const description = "Greater Expectation is the church and ministry home of Pastor Troy—sharing Gospel-centered encouragement, worship, prayer, and fellowship.";
+const title = "Greater Expectation Church | Pastor Troy";
+const description = "Greater Expectation Church is a Christ-centered Baptist Christian ministry led by Pastor Troy, sharing the Gospel through Scripture, prayer, worship, fellowship, and Christian encouragement.";
 
 export function generateMetadata(): Metadata {
   const base = new URL(canonicalUrl);
@@ -63,6 +63,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         "@type": "Church",
         "@id": `${canonicalUrl}#church`,
         name: "Greater Expectation Church",
+        alternateName: "Greater Expectation",
         url: canonicalUrl,
         description,
         image: socialImageUrl,
@@ -79,6 +80,18 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         name: "Greater Expectation Church",
         description,
         publisher: { "@id": `${canonicalUrl}#church` },
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${canonicalUrl}#webpage`,
+        url: canonicalUrl,
+        name: title,
+        description,
+        isPartOf: { "@id": `${canonicalUrl}#website` },
+        about: { "@id": `${canonicalUrl}#church` },
+        datePublished: "2026-07-29",
+        dateModified: "2026-08-02",
         inLanguage: "en-US",
       },
     ],
