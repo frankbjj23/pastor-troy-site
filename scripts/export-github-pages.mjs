@@ -29,6 +29,9 @@ html = html
   .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
   .replace(/<link\b[^>]*\brel=["']modulepreload["'][^>]*>/gi, "")
   .replace(/https?:\/\/localhost(?::\d+)?\//g, `${siteOrigin}${sitePrefix}/`)
+  // The immersive Messages route needs its client-side audio and movement
+  // runtime, so the static GitHub preview should send visitors to production.
+  .replace(/\bhref="\/messages"/g, 'href="https://greaterexpectation.org/messages"')
   .replace(/\b(href|src)="\/(?!\/)/g, `$1="${sitePrefix}/`);
 
 await Promise.all([
