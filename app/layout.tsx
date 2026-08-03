@@ -91,7 +91,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         isPartOf: { "@id": `${canonicalUrl}#website` },
         about: { "@id": `${canonicalUrl}#church` },
         datePublished: "2026-07-29",
-        dateModified: "2026-08-02",
+        dateModified: "2026-08-03",
         inLanguage: "en-US",
       },
     ],

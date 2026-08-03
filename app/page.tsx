@@ -27,9 +27,9 @@ const pathways = [
   {
     number: "02",
     title: "Messages",
-    copy: "Return to Scripture, Gospel-centered encouragement, and a word for the week.",
-    href: "#messages",
-    action: "Hear the message",
+    copy: "Follow the sound into an immersive library of Scripture and Gospel-centered encouragement.",
+    href: "/messages",
+    action: "Enter the experience",
   },
   {
     number: "03",
@@ -60,7 +60,7 @@ export default function Home() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#visit">New Here</a>
-          <a href="#messages">Messages</a>
+          <a href="/messages">Messages</a>
           <a href="#pastor">Pastor Troy</a>
           <a href="#ministry">Ministry</a>
         </nav>
@@ -87,7 +87,7 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a className="button button-light" href="#visit">Plan Your Visit</a>
-            <a className="button button-outline" href="#messages">Explore Messages</a>
+            <a className="button button-outline" href="/messages">Explore Messages</a>
           </div>
         </div>
         <div className="hero-pastor">
@@ -157,14 +157,32 @@ export default function Home() {
       <section className="messages-section" id="messages">
         <div className="section-heading">
           <div>
-            <p className="eyebrow navy">Latest encouragement</p>
-            <h2>A word for the journey.</h2>
+            <p className="eyebrow navy">The Messages experience</p>
+            <h2>Follow the sound. Enter the sanctuary.</h2>
           </div>
           <p>
-            Gospel-centered truth for everyday life—grounded in Scripture and
-            shared to strengthen your faith.
+            Walk toward the Word as a distant sermon becomes clear, enter the
+            sanctuary, and choose a minister’s message library.
           </p>
         </div>
+        <a className="messages-experience" href="/messages" aria-label="Enter the Greater Expectation Messages experience">
+          <span className="experience-door-glow" aria-hidden="true" />
+          <span className="experience-copy">
+            <span className="experience-label">An immersive message journey</span>
+            <strong>Come closer.<br />The doors are opening.</strong>
+            <span className="experience-description">
+              Hear the sermon grow clearer, step into the sanctuary, and select
+              the voice you want to hear.
+            </span>
+            <span className="experience-action">Enter Messages <span aria-hidden="true">→</span></span>
+            <small>Current minister portraits and voices include clearly labeled AI demonstrations.</small>
+          </span>
+          <span className="experience-steps" aria-hidden="true">
+            <span><i>01</i> Follow the sound</span>
+            <span><i>02</i> Watch the doors open</span>
+            <span><i>03</i> Choose a message</span>
+          </span>
+        </a>
         <article className="featured-message">
           <div className="message-image">
             <img src="/images/pastor-troy-preaching.png" alt="AI-created illustrative scene of Pastor Troy preaching" />
@@ -179,7 +197,7 @@ export default function Home() {
               is present on the road—and taking the next right step with Him.
             </p>
             <blockquote>“For we walk by faith, not by sight.”</blockquote>
-            <a href="#connect">Receive future messages <span aria-hidden="true">→</span></a>
+            <a href="/messages">Hear this message <span aria-hidden="true">→</span></a>
           </div>
         </article>
       </section>
@@ -269,7 +287,7 @@ export default function Home() {
         </a>
         <div className="footer-links">
           <a href="#visit">New Here</a>
-          <a href="#messages">Messages</a>
+          <a href="/messages">Messages</a>
           <a href="#pastor">Pastor Troy</a>
           <a href="#ministry">Ministry</a>
         </div>
