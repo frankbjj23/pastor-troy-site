@@ -286,7 +286,7 @@ export default function MessagesDemo() {
             <div className="sanctuary-heading">
               <p className="demo-eyebrow">You have entered the sanctuary</p>
               <h1>Choose a voice.<br />Receive the message.</h1>
-              <p>Select a minister to preview how each message library could work.</p>
+              <p>A joyful, diverse congregation welcomes you. Select a minister to preview each message library.</p>
             </div>
 
             <div className="minister-grid" aria-label="Sample minister profiles">
@@ -347,7 +347,7 @@ export default function MessagesDemo() {
           </div>
         )}
 
-        <p className="prototype-note">Current HeyGen AI demo voices and “Concept portrait” images are temporary placeholders</p>
+        <p className="prototype-note">The congregation scene and “Concept portrait” images are AI-created; HeyGen voices are demonstrations</p>
       </section>
     </main>
   );
