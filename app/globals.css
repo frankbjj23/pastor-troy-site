@@ -1671,7 +1671,18 @@ footer {
 }
 
 @media (max-width: 520px) {
+  .home-page,
+  .about-page { text-align: center; }
   .brand span { display: none; }
+  .hero-kicker,
+  .hero-actions,
+  .footer-links,
+  .ministry-grid figcaption,
+  .experience-steps > span { justify-content: center; }
+  .hero-logo,
+  .vision-link,
+  .pastor-story-link,
+  .footer-logo { margin-right: auto; margin-left: auto; }
   .hero-pastor { width: 72%; height: 310px; }
   .pathways { grid-template-columns: 1fr; }
   .pathway-card,
@@ -1682,17 +1693,40 @@ footer {
   }
   .pathway-card:last-child { border-bottom: 0; }
   .pathway-card p { min-height: 0; }
+  .visit-note {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
   .slogan-section,
   .messages-section,
   .ministry-section,
   .prayer-section { padding-top: 90px; padding-bottom: 90px; }
   .vision-preview h2 { font-size: 45px; }
-  .vision-pillars article { padding: 24px 0; }
+  .vision-pillars article {
+    padding: 24px 0;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .vision-pillars article p { grid-column: auto; }
   .vision-pillars h3 { font-size: 24px; }
   .messages-experience { min-height: 730px; background-position: 56% center; }
   .experience-copy { margin: 18px 18px 158px; padding: 31px 23px; }
   .experience-copy > strong { font-size: 43px; }
   .experience-steps { left: 18px; right: 18px; bottom: 18px; }
+  .message-copy blockquote,
+  .pastor-story-copy blockquote {
+    padding: 19px 0;
+    border-left: 0;
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+  }
+  .message-image > span {
+    left: 20px;
+    right: 20px;
+    text-align: center;
+  }
   .message-image { min-height: 380px; }
   .pastor-photo { min-height: 500px; }
   .about-hero { min-height: 810px; padding-top: 132px; }
@@ -1710,15 +1744,28 @@ footer {
   .expectation-grid { grid-template-columns: 1fr; }
   .expectation-grid article { min-height: 205px; }
   .vision-manifesto { padding-top: 85px; padding-bottom: 85px; }
-  .how-we-live-list article { grid-template-columns: 42px 1fr; gap: 14px; }
+  .how-we-live-list article {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .how-we-live-list article > span { padding-top: 0; }
   .pastor-story-photo { height: 440px; min-height: 0; }
+  .pastor-story-photo > div { text-align: center; }
   .pastor-details { grid-template-columns: 1fr; padding: 75px 18px; }
   .pastor-details article { min-height: 0; }
   .about-closing { min-height: 620px; padding-left: 24px; padding-right: 24px; }
   .about-closing::after { right: -65%; }
+  .about-closing > div,
+  .connect-section > div { width: 100%; margin-right: auto; margin-left: auto; }
   .ministry-grid { grid-template-rows: 360px 260px 260px; }
+  .prayer-section > div:last-child {
+    padding: 32px 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--silver);
+  }
   .connect-section { min-height: 600px; }
   .connect-section > img { width: 100%; }
+  footer .footer-meta { text-align: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {

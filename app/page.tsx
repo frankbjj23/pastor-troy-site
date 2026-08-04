@@ -49,7 +49,7 @@ const pathways = [
 
 export default function Home() {
   return (
-    <main>
+    <main className="home-page">
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Greater Expectation Church home">
           <img src="/images/greater-expectation-logo.jpg" alt="" />
