@@ -32,6 +32,9 @@ html = html
   // The immersive Messages route needs its client-side audio and movement
   // runtime, so the static GitHub preview should send visitors to production.
   .replace(/\bhref="\/messages"/g, 'href="https://greaterexpectation.org/messages"')
+  // The About page is a separate server-rendered route; keep homepage preview
+  // links useful by sending visitors to its canonical production URL.
+  .replace(/\bhref="\/about([^"]*)"/g, 'href="https://greaterexpectation.org/about$1"')
   .replace(/\b(href|src)="\/(?!\/)/g, `$1="${sitePrefix}/`);
 
 await Promise.all([
