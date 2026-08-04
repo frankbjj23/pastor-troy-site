@@ -40,10 +40,10 @@ const pathways = [
   },
   {
     number: "04",
-    title: "Our Pastor",
-    copy: "Meet Pastor Troy and the heart behind Greater Expectation Church.",
-    href: "#pastor",
-    action: "Meet Pastor Troy",
+    title: "About Us",
+    copy: "Discover our Christ-centered vision and Pastor Troy’s story of restoration.",
+    href: "/about",
+    action: "Know our heart",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function Home() {
         <nav aria-label="Main navigation">
           <a href="#visit">New Here</a>
           <a href="/messages">Messages</a>
-          <a href="#pastor">Pastor Troy</a>
+          <a href="/about">About</a>
           <a href="#ministry">Ministry</a>
         </nav>
         <a className="header-cta" href="#visit">Plan Your Visit</a>
@@ -82,7 +82,7 @@ export default function Home() {
           <h1 id="hero-title">Greater Expectation Church: Christ at the center, people growing in faith.</h1>
           <p className="hero-intro">
             Greater Expectation Church is a Christ-centered Baptist Christian
-            ministry led by Pastor Troy. Come as you are, encounter Christ
+            ministry led by Pastor Troy E. Bazemore. Come as you are, encounter Christ
             through the Word, and grow with a welcoming church family.
           </p>
           <div className="hero-actions">
@@ -91,10 +91,10 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-pastor">
-          <img src="/images/pastor-troy-main-refined.png" alt="Pastor Troy of Greater Expectation Church" />
+          <img src="/images/pastor-troy-main-refined.png" alt="Pastor Troy E. Bazemore of Greater Expectation Church" />
           <div className="pastor-caption">
             <span>Lead Pastor</span>
-            <strong>Pastor Troy</strong>
+            <strong>Pastor Troy E. Bazemore</strong>
           </div>
         </div>
         <div className="hero-scroll" aria-hidden="true">Scroll to discover <span>↓</span></div>
@@ -145,11 +145,44 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="vision-preview" aria-labelledby="vision-preview-title">
+        <div className="vision-preview-copy">
+          <p className="eyebrow light">Our vision</p>
+          <h2 id="vision-preview-title">Because Jesus is greater, we expect greater.</h2>
+          <p>
+            We believe Christ transforms lives, restores families, strengthens
+            communities, and equips ordinary people to advance the Kingdom of God.
+            Our confidence rests in the finished work of Jesus and the ongoing work
+            of the Holy Spirit.
+          </p>
+          <a className="vision-link" href="/about#vision">
+            Read our full vision <span aria-hidden="true">→</span>
+          </a>
+        </div>
+        <div className="vision-pillars" aria-label="How we live">
+          <article>
+            <span>01</span>
+            <h3>Faith over fear</h3>
+            <p>Trusting the greater promises of Christ in every season.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Purpose over passivity</h3>
+            <p>Serving, growing, and living as people called by God.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Expectation over doubt</h3>
+            <p>Believing that nothing is impossible with our God.</p>
+          </article>
+        </div>
+      </section>
+
       <section className="slogan-section" aria-label="Greater Expectation Church slogan">
         <p className="eyebrow light">Live with expectation</p>
         <blockquote>
-          “Your past explains where you&apos;ve been. Christ reveals where your going.
-          Live with a Greater Expectation”!
+          “Your past explains where you&apos;ve been. Christ reveals where you&apos;re going.
+          Live with a Greater Expectation!”
         </blockquote>
         <span className="slogan-rule" />
       </section>
@@ -204,24 +237,28 @@ export default function Home() {
 
       <section className="pastor-section" id="pastor">
         <div className="pastor-photo">
-          <img src="/images/pastor-troy-main-refined.png" alt="Pastor Troy" />
-          <span className="pastor-photo-note">Portrait refined to reflect the Greater Expectation visual identity</span>
+          <img src="/images/pastor-troy-main-refined.png" alt="Pastor Troy E. Bazemore" />
         </div>
         <div className="pastor-copy">
           <p className="eyebrow navy">Meet our pastor</p>
-          <h2>A shepherd’s heart. A Gospel-centered message.</h2>
+          <h2>A life restored. A calling answered.</h2>
           <p className="large-copy">
-            Pastor Troy is a Baptist Christian minister committed to sharing the
-            good news of Jesus Christ with clarity, compassion, and hope.
+            Pastor Troy E. Bazemore is the founder and lead pastor of Greater
+            Expectation Church. Shaped by a family legacy of Christian ministry
+            and his own testimony of Christ&apos;s restoring grace, he is committed
+            to teaching Scripture clearly and helping people know who they are in Christ.
           </p>
           <p>
-            His ministry invites people to understand where they have been,
-            discover who they are in Christ, and live forward with a greater
-            expectation of what God can do.
+            Alongside Elder Tanisha Bazemore, co-pastor and co-founder, he leads
+            a ministry centered on transformed lives, restored families,
+            equipped disciples, and enduring hope in Jesus.
           </p>
+          <a className="pastor-story-link" href="/about#pastor-story">
+            Read Pastor Troy&apos;s story <span aria-hidden="true">→</span>
+          </a>
           <div className="pastor-signoff">
-            <span>Pastor Troy</span>
-            <small>Greater Expectation Church</small>
+            <span>Pastor Troy E. Bazemore</span>
+            <small>Founder &amp; Lead Pastor</small>
           </div>
         </div>
       </section>
@@ -288,7 +325,7 @@ export default function Home() {
         <div className="footer-links">
           <a href="#visit">New Here</a>
           <a href="/messages">Messages</a>
-          <a href="#pastor">Pastor Troy</a>
+          <a href="/about">About</a>
           <a href="#ministry">Ministry</a>
         </div>
         <div className="footer-meta">
