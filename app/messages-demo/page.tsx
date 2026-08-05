@@ -233,7 +233,7 @@ export default function MessagesDemo() {
 
       <header className="demo-header">
         <Link href="/" aria-label="Return to Greater Expectation Church">
-          <img src="/images/greater-expectation-logo.jpg" alt="" />
+          <img src="/images/greater-expectation-logo.jpg" alt="" width="1280" height="1136" />
           <span><strong>Greater Expectation</strong><small>Messages experience</small></span>
         </Link>
         <span className="demo-status">Faith • Purpose • Expectation</span>
@@ -300,7 +300,7 @@ export default function MessagesDemo() {
                     setSelectedMinister(minister);
                   }}
                 >
-                  <img src={minister.image} alt={minister.placeholder ? `Fictional concept portrait for ${minister.name}` : minister.name} />
+                  <img src={minister.image} alt={minister.placeholder ? `Fictional concept portrait for ${minister.name}` : minister.name} width="1254" height="1254" />
                   <span className="minister-shade" />
                   {minister.placeholder && <small>Concept portrait</small>}
                   <span className="minister-meta"><strong>{minister.name}</strong><em>{minister.role}</em></span>
@@ -320,7 +320,7 @@ export default function MessagesDemo() {
           >
             <button ref={drawerCloseRef} type="button" className="drawer-close" onClick={closeDrawer} aria-label="Close message list">×</button>
             <div className="drawer-profile">
-              <img src={selectedMinister.image} alt="" />
+              <img src={selectedMinister.image} alt="" width="1254" height="1254" />
               <div><span>{selectedMinister.role}</span><h2 id="message-drawer-title">{selectedMinister.name}</h2></div>
             </div>
             <p className="ai-voice-notice"><strong>HeyGen AI demo voice</strong>{selectedMinister.voiceLabel}</p>

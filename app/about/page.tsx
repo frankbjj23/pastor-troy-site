@@ -132,7 +132,7 @@ export default function AboutPage() {
 
       <header className="site-header about-header">
         <Link className="brand" href="/" aria-label="Greater Expectation Church home">
-          <img src="/images/greater-expectation-logo.jpg" alt="" />
+          <img src="/images/greater-expectation-logo.jpg" alt="" width="1280" height="1136" />
           <span>
             <strong>Greater Expectation</strong>
             <small>Faith • Purpose • Expectation</small>
@@ -258,7 +258,7 @@ export default function AboutPage() {
 
       <section className="pastor-story" id="pastor-story" aria-labelledby="pastor-story-title">
         <div className="pastor-story-photo">
-          <img src="/images/pastor-troy-main-refined.png" alt="Pastor Troy E. Bazemore" />
+          <img src="/images/pastor-troy-main-refined.png" alt="Pastor Troy E. Bazemore" width="1086" height="1448" />
           <div>
             <span>Founder &amp; Lead Pastor</span>
             <strong>Pastor Troy E. Bazemore</strong>
@@ -349,7 +349,7 @@ export default function AboutPage() {
 
       <footer>
         <Link className="footer-logo" href="/" aria-label="Greater Expectation Church home">
-          <img src="/images/greater-expectation-logo.jpg" alt="Greater Expectation Church" />
+          <img src="/images/greater-expectation-logo.jpg" alt="Greater Expectation Church" width="1280" height="1136" />
         </Link>
         <div className="footer-links">
           <Link href="/#visit">New Here</Link>

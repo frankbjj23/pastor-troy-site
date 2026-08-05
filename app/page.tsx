@@ -3,16 +3,22 @@ const ministryScenes = [
     src: "/images/pastor-troy-preaching.png",
     alt: "AI-created illustrative scene of Pastor Troy preaching from a church pulpit",
     label: "Preaching the Word",
+    width: 1672,
+    height: 941,
   },
   {
     src: "/images/pastor-troy-prayer.png",
     alt: "AI-created illustrative scene of Pastor Troy praying with church members",
     label: "Standing Together in Prayer",
+    width: 1536,
+    height: 1024,
   },
   {
     src: "/images/pastor-troy-bible-study.png",
     alt: "AI-created illustrative scene of Pastor Troy leading a Bible study",
     label: "Growing Through Scripture",
+    width: 1536,
+    height: 1024,
   },
 ];
 
@@ -52,7 +58,7 @@ export default function Home() {
     <main className="home-page">
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Greater Expectation Church home">
-          <img src="/images/greater-expectation-logo.jpg" alt="" />
+          <img src="/images/greater-expectation-logo.jpg" alt="" width="1280" height="1136" />
           <span>
             <strong>Greater Expectation</strong>
             <small>Faith • Purpose • Expectation</small>
@@ -77,6 +83,8 @@ export default function Home() {
             <img
               src="/images/greater-expectation-logo.jpg"
               alt="Greater Expectation Church — Faith, Purpose, Expectation"
+              width="1280"
+              height="1136"
             />
           </div>
           <h1 id="hero-title">Greater Expectation Church: Christ at the center, people growing in faith.</h1>
@@ -91,7 +99,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-pastor">
-          <img src="/images/pastor-troy-main-refined.png" alt="Pastor Troy E. Bazemore of Greater Expectation Church" />
+          <img src="/images/pastor-troy-main-refined.png" alt="Pastor Troy E. Bazemore of Greater Expectation Church" width="1086" height="1448" />
           <div className="pastor-caption">
             <span>Lead Pastor</span>
             <strong>Pastor Troy E. Bazemore</strong>
@@ -122,7 +130,7 @@ export default function Home() {
 
       <section className="welcome-section" id="visit">
         <div className="welcome-art" aria-hidden="true">
-          <img src="/images/greater-expectation-logo.jpg" alt="" />
+          <img src="/images/greater-expectation-logo.jpg" alt="" width="1280" height="1136" />
         </div>
         <div className="welcome-copy">
           <p className="eyebrow navy">Your first Sunday</p>
@@ -218,7 +226,7 @@ export default function Home() {
         </a>
         <article className="featured-message">
           <div className="message-image">
-            <img src="/images/pastor-troy-preaching.png" alt="AI-created illustrative scene of Pastor Troy preaching" />
+            <img src="/images/pastor-troy-preaching.png" alt="AI-created illustrative scene of Pastor Troy preaching" width="1672" height="941" />
             <span>Illustrative AI-created ministry scene</span>
           </div>
           <div className="message-copy">
@@ -237,7 +245,7 @@ export default function Home() {
 
       <section className="pastor-section" id="pastor">
         <div className="pastor-photo">
-          <img src="/images/pastor-troy-main-refined.png" alt="Pastor Troy E. Bazemore" />
+          <img src="/images/pastor-troy-main-refined.png" alt="Pastor Troy E. Bazemore" width="1086" height="1448" />
         </div>
         <div className="pastor-copy">
           <p className="eyebrow navy">Meet our pastor</p>
@@ -278,7 +286,7 @@ export default function Home() {
         <div className="ministry-grid">
           {ministryScenes.map((scene, index) => (
             <figure key={scene.src} className={index === 0 ? "ministry-featured" : ""}>
-              <img src={scene.src} alt={scene.alt} />
+              <img src={scene.src} alt={scene.alt} width={scene.width} height={scene.height} />
               <figcaption>
                 <span>{String(index + 1).padStart(2, "0")}</span>
                 <strong>{scene.label}</strong>
@@ -305,7 +313,7 @@ export default function Home() {
       </section>
 
       <section className="connect-section" id="connect">
-        <img src="/images/greater-expectation-logo.jpg" alt="" aria-hidden="true" />
+        <img src="/images/greater-expectation-logo.jpg" alt="" aria-hidden="true" width="1280" height="1136" />
         <div className="connect-glow" aria-hidden="true" />
         <div>
           <p className="eyebrow light">Your next step</p>
@@ -320,7 +328,7 @@ export default function Home() {
 
       <footer>
         <a className="footer-logo" href="#home" aria-label="Greater Expectation Church home">
-          <img src="/images/greater-expectation-logo.jpg" alt="Greater Expectation Church" />
+          <img src="/images/greater-expectation-logo.jpg" alt="Greater Expectation Church" width="1280" height="1136" />
         </a>
         <div className="footer-links">
           <a href="#visit">New Here</a>
